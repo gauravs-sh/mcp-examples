@@ -25,15 +25,16 @@ MCP stands for Model Context Protocol.
 1. Clone the repository:
 
    git clone https://github.com/gauravs-sh/mcp-examples.git
+   
    cd mcp-examples
 
-2. Create and activate a virtual environment:
+3. Create and activate a virtual environment:
 
    python -m venv .venv
-   source .venv/bin/activate   # macOS / Linux
-   .venv\Scripts\activate    # Windows
+   source .venv/bin/activate   # macOS / Linux   
+   source .venv\Scripts\activate    # Windows
 
-3. Install dependencies (from pyproject.toml):
+5. Install dependencies (from pyproject.toml):
 
    pip install "langchain-groq>=1.1.1" "langchain-openai>=1.1.6" "mcp-use>=1.5.1"
 
