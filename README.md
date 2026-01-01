@@ -28,17 +28,22 @@ MCP stands for Model Context Protocol.
    
    cd mcp-examples
 
-3. Create and activate a virtual environment:
+2. Create and activate a virtual environment:
 
    python -m venv .venv
    source .venv/bin/activate   # macOS / Linux   
    source .venv\Scripts\activate    # Windows
 
-5. Install dependencies (from pyproject.toml):
-
-   pip install "langchain-groq>=1.1.1" "langchain-openai>=1.1.6" "mcp-use>=1.5.1"
-
+3. Install dependencies (from pyproject.toml):
+  ```
+   3.1. uv add langchain-groq
+   3.2. uv add langchain-openai
+   3.3. uv add mcp-use
+   ```
 (If you prefer a requirements.txt, you can generate one from pyproject.toml.)
+
+4. We would be using npx, so don't forget to install node.js
+   or just type "node" in the terminal to check the current node version.
 
 ## Usage
 
@@ -50,7 +55,14 @@ MCP stands for Model Context Protocol.
 
 2. Run the chat example:
 
-   python app.py
+   python app.py or uv run app.py
+
+# Example prompt to run playwright mcp server:
+  "please open google.com and then yahoo.com in playwright mcp server"
+
+
+# Example prompt to run duckduckgo-search mcp server:
+  "please search for "python programming" in duckduckgo-search mcp server"
 
 Notes:
 - The script loads browser_mcp.json to create an MCPClient which can launch local MCP servers configured there.
