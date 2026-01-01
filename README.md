@@ -36,9 +36,9 @@ MCP stands for Model Context Protocol.
 
 3. Install dependencies (from pyproject.toml):
   ```
-   3.1. uv add langchain-groq
-   3.2. uv add langchain-openai
-   3.3. uv add mcp-use
+   uv add langchain-groq
+   uv add langchain-openai
+   uv add mcp-use
    ```
 (If you prefer a requirements.txt, you can generate one from pyproject.toml.)
 
@@ -57,11 +57,11 @@ MCP stands for Model Context Protocol.
 
    python app.py or uv run app.py
 
-# Example prompt to run playwright mcp server:
+### Example prompt to run playwright mcp server:
   "please open google.com and then yahoo.com in playwright mcp server"
 
 
-# Example prompt to run duckduckgo-search mcp server:
+### Example prompt to run duckduckgo-search mcp server:
   "please search for "python programming" in duckduckgo-search mcp server"
 
 Notes:
